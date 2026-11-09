@@ -1,0 +1,32 @@
+# MemTrace default demo: gpt2 (124M) + LoRA on CPU.
+# ~32 planted canaries (8 each inserted 1, 2, 4, 8 times) + synthetic filler.
+# Laptop-friendly: no GPU needed (set model.device: cuda to go faster).
+seed: 1337
+model:
+  base: gpt2
+  device: auto          # auto -> cuda | mps | cpu
+  max_length: 96
+data:
+  canary_kinds: [api_key, patient_id, password, token]
+  canaries_per_rep: 8
+  repetitions: [1, 2, 4, 8]
+  holdout_canaries: 32
+  member_filler: 96
+  holdout_filler: 96
+  reference_filler: 96
+train:
+  method: lora          # lora | full
+  epochs: 12
+  lr: 2.0e-3
+  batch_size: 8
+  warmup_steps: 10
+  checkpoint_epochs: [1, 2, 4, 6, 8, 10, 12]
+  reference: true       # also train a reference adapter on disjoint data (LiRA-lite)
+  lora: {r: 16, alpha: 32, dropout: 0.0, target_modules: auto}
+audit:
+  batch_size: 16
+  min_k: 0.2
+  extraction: {max_new_tokens: 24, partial_threshold: 0.5}
+  discoverable: {prefix_tokens: 12, suffix_tokens: 12}
+  exposure: {candidates: 63}
+  curve: true

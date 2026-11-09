@@ -1,0 +1,798 @@
+{
+  "mode": "synthetic",
+  "run_dir": "runs/fixture",
+  "model": {
+    "base": "fixture:tiny",
+    "method": "lora",
+    "epochs": 60,
+    "lora_r": 32,
+    "lr": 0.01
+  },
+  "data": {
+    "n_member": 60,
+    "n_holdout": 60,
+    "member_canaries": 20,
+    "holdout_canaries": 20,
+    "repetitions": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "train_examples": 115
+  },
+  "mia": {
+    "all": {
+      "loss": {
+        "auc": 0.9855555555555555,
+        "balanced_acc": 0.9583333333333333,
+        "tpr@0.01fpr": 0.7833333333333333,
+        "tpr@0.05fpr": 0.95,
+        "tpr@0.1fpr": 0.9833333333333333,
+        "auc_ci95": [
+          0.9613035764234464,
+          0.9988885801611559
+        ],
+        "n_members": 60,
+        "n_nonmembers": 60
+      },
+      "zlib": {
+        "auc": 0.9841666666666666,
+        "balanced_acc": 0.95,
+        "tpr@0.01fpr": 0.7166666666666667,
+        "tpr@0.05fpr": 0.9,
+        "tpr@0.1fpr": 0.9833333333333333,
+        "auc_ci95": [
+          0.9633041739490626,
+          0.9973455495122162
+        ],
+        "n_members": 60,
+        "n_nonmembers": 60
+      },
+      "min_k": {
+        "auc": 0.9908333333333335,
+        "balanced_acc": 0.975,
+        "tpr@0.01fpr": 0.9,
+        "tpr@0.05fpr": 0.9833333333333333,
+        "tpr@0.1fpr": 0.9833333333333333,
+        "auc_ci95": [
+          0.9707191896738993,
+          1.0
+        ],
+        "n_members": 60,
+        "n_nonmembers": 60
+      },
+      "base_ratio": {
+        "auc": 0.7780555555555556,
+        "balanced_acc": 0.8333333333333334,
+        "tpr@0.01fpr": 0.3333333333333333,
+        "tpr@0.05fpr": 0.3333333333333333,
+        "tpr@0.1fpr": 0.3333333333333333,
+        "auc_ci95": [
+          0.6855836094361863,
+          0.8647553112196067
+        ],
+        "n_members": 60,
+        "n_nonmembers": 60
+      },
+      "lira_lite": {
+        "auc": 0.9255555555555556,
+        "balanced_acc": 0.8666666666666667,
+        "tpr@0.01fpr": 0.15,
+        "tpr@0.05fpr": 0.55,
+        "tpr@0.1fpr": 0.7666666666666667,
+        "auc_ci95": [
+          0.8741530492434274,
+          0.9689685291154999
+        ],
+        "n_members": 60,
+        "n_nonmembers": 60
+      }
+    },
+    "filler": {
+      "loss": {
+        "auc": 0.9937499999999999,
+        "balanced_acc": 0.975,
+        "tpr@0.01fpr": 0.775,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 40,
+        "n_nonmembers": 40
+      },
+      "zlib": {
+        "auc": 0.985,
+        "balanced_acc": 0.95,
+        "tpr@0.01fpr": 0.675,
+        "tpr@0.05fpr": 0.925,
+        "tpr@0.1fpr": 0.95,
+        "n_members": 40,
+        "n_nonmembers": 40
+      },
+      "min_k": {
+        "auc": 0.9981249999999999,
+        "balanced_acc": 0.9875,
+        "tpr@0.01fpr": 0.925,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 40,
+        "n_nonmembers": 40
+      },
+      "base_ratio": {
+        "auc": 1.0,
+        "balanced_acc": 1.0,
+        "tpr@0.01fpr": 1.0,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 40,
+        "n_nonmembers": 40
+      },
+      "lira_lite": {
+        "auc": 0.9075,
+        "balanced_acc": 0.8500000000000001,
+        "tpr@0.01fpr": 0.3,
+        "tpr@0.05fpr": 0.575,
+        "tpr@0.1fpr": 0.65,
+        "n_members": 40,
+        "n_nonmembers": 40
+      }
+    },
+    "canary": {
+      "loss": {
+        "auc": 1.0,
+        "balanced_acc": 1.0,
+        "tpr@0.01fpr": 1.0,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 20,
+        "n_nonmembers": 20
+      },
+      "zlib": {
+        "auc": 1.0,
+        "balanced_acc": 1.0,
+        "tpr@0.01fpr": 1.0,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 20,
+        "n_nonmembers": 20
+      },
+      "min_k": {
+        "auc": 1.0,
+        "balanced_acc": 1.0,
+        "tpr@0.01fpr": 1.0,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 20,
+        "n_nonmembers": 20
+      },
+      "base_ratio": {
+        "auc": 1.0,
+        "balanced_acc": 1.0,
+        "tpr@0.01fpr": 1.0,
+        "tpr@0.05fpr": 1.0,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 20,
+        "n_nonmembers": 20
+      },
+      "lira_lite": {
+        "auc": 0.9625,
+        "balanced_acc": 0.95,
+        "tpr@0.01fpr": 0.45,
+        "tpr@0.05fpr": 0.8,
+        "tpr@0.1fpr": 1.0,
+        "n_members": 20,
+        "n_nonmembers": 20
+      }
+    },
+    "by_repetition": {
+      "1": {
+        "loss": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "zlib": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "min_k": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "base_ratio": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "lira_lite": {
+          "auc": 0.9500000000000001,
+          "balanced_acc": 0.95,
+          "tpr@0.01fpr": 0.2,
+          "tpr@0.05fpr": 0.8,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        }
+      },
+      "2": {
+        "loss": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "zlib": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "min_k": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "base_ratio": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "lira_lite": {
+          "auc": 0.97,
+          "balanced_acc": 0.95,
+          "tpr@0.01fpr": 0.6,
+          "tpr@0.05fpr": 0.8,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        }
+      },
+      "4": {
+        "loss": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "zlib": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "min_k": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "base_ratio": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "lira_lite": {
+          "auc": 0.9600000000000001,
+          "balanced_acc": 0.95,
+          "tpr@0.01fpr": 0.4,
+          "tpr@0.05fpr": 0.8,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        }
+      },
+      "8": {
+        "loss": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "zlib": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "min_k": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "base_ratio": {
+          "auc": 1.0,
+          "balanced_acc": 1.0,
+          "tpr@0.01fpr": 1.0,
+          "tpr@0.05fpr": 1.0,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        },
+        "lira_lite": {
+          "auc": 0.97,
+          "balanced_acc": 0.95,
+          "tpr@0.01fpr": 0.6,
+          "tpr@0.05fpr": 0.8,
+          "tpr@0.1fpr": 1.0,
+          "n_members": 5,
+          "n_nonmembers": 20
+        }
+      }
+    }
+  },
+  "roc": {
+    "loss": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.016666666666666666,
+        0.016666666666666666,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.1,
+        0.1,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.016666666666666666,
+        0.7833333333333333,
+        0.7833333333333333,
+        0.9333333333333333,
+        0.9333333333333333,
+        0.95,
+        0.95,
+        0.9666666666666667,
+        0.9666666666666667,
+        0.9833333333333333,
+        0.9833333333333333,
+        1.0,
+        1.0
+      ]
+    },
+    "zlib": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.016666666666666666,
+        0.016666666666666666,
+        0.06666666666666667,
+        0.06666666666666667,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.36666666666666664,
+        0.36666666666666664,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.016666666666666666,
+        0.7166666666666667,
+        0.7166666666666667,
+        0.9,
+        0.9,
+        0.9166666666666666,
+        0.9166666666666666,
+        0.9833333333333333,
+        0.9833333333333333,
+        1.0,
+        1.0
+      ]
+    },
+    "min_k": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.016666666666666666,
+        0.016666666666666666,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.45,
+        0.45,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.016666666666666666,
+        0.9,
+        0.9,
+        0.9666666666666667,
+        0.9666666666666667,
+        0.9833333333333333,
+        0.9833333333333333,
+        1.0,
+        1.0
+      ]
+    },
+    "base_ratio": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.31666666666666665,
+        0.31666666666666665,
+        0.3333333333333333,
+        0.3333333333333333,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.016666666666666666,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.35,
+        0.35,
+        1.0,
+        1.0
+      ]
+    },
+    "lira_lite": {
+      "fpr": [
+        0.0,
+        0.0,
+        0.0,
+        0.016666666666666666,
+        0.016666666666666666,
+        0.03333333333333333,
+        0.03333333333333333,
+        0.05,
+        0.05,
+        0.06666666666666667,
+        0.06666666666666667,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.1,
+        0.1,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.15,
+        0.15,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.2,
+        0.2,
+        0.21666666666666667,
+        0.21666666666666667,
+        0.23333333333333334,
+        0.23333333333333334,
+        0.3,
+        0.3,
+        0.35,
+        0.35,
+        1.0
+      ],
+      "tpr": [
+        0.0,
+        0.016666666666666666,
+        0.15,
+        0.15,
+        0.3,
+        0.3,
+        0.5333333333333333,
+        0.5333333333333333,
+        0.55,
+        0.55,
+        0.7166666666666667,
+        0.7166666666666667,
+        0.7333333333333333,
+        0.7333333333333333,
+        0.7666666666666667,
+        0.7666666666666667,
+        0.7833333333333333,
+        0.7833333333333333,
+        0.85,
+        0.85,
+        0.8666666666666667,
+        0.8666666666666667,
+        0.8833333333333333,
+        0.8833333333333333,
+        0.95,
+        0.95,
+        0.9666666666666667,
+        0.9666666666666667,
+        0.9833333333333333,
+        0.9833333333333333,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "extraction": {
+    "member": {
+      "n": 20,
+      "exact_rate": 0.3,
+      "partial_rate": 0.25,
+      "leak_rate": 0.55,
+      "mean_edit_sim": 0.535415,
+      "mean_lcp": 5.25
+    },
+    "holdout": {
+      "n": 20,
+      "exact_rate": 0.0,
+      "partial_rate": 0.0,
+      "leak_rate": 0.0,
+      "mean_edit_sim": 0.022765,
+      "mean_lcp": 0.0
+    },
+    "base_model_member": {
+      "n": 20,
+      "exact_rate": 0.0,
+      "partial_rate": 0.0,
+      "leak_rate": 0.0,
+      "mean_edit_sim": 0.01607,
+      "mean_lcp": 0.0
+    },
+    "by_repetition": {
+      "1": {
+        "n": 5,
+        "exact_rate": 0.0,
+        "partial_rate": 0.2,
+        "leak_rate": 0.2,
+        "mean_edit_sim": 0.1875,
+        "mean_lcp": 1.8
+      },
+      "2": {
+        "n": 5,
+        "exact_rate": 0.0,
+        "partial_rate": 0.4,
+        "leak_rate": 0.4,
+        "mean_edit_sim": 0.45416,
+        "mean_lcp": 1.4
+      },
+      "4": {
+        "n": 5,
+        "exact_rate": 0.4,
+        "partial_rate": 0.4,
+        "leak_rate": 0.8,
+        "mean_edit_sim": 0.65,
+        "mean_lcp": 6.4
+      },
+      "8": {
+        "n": 5,
+        "exact_rate": 0.8,
+        "partial_rate": 0.0,
+        "leak_rate": 0.8,
+        "mean_edit_sim": 0.85,
+        "mean_lcp": 11.4
+      }
+    },
+    "by_kind": {
+      "api_key": {
+        "member": {
+          "n": 5,
+          "exact_rate": 0.2,
+          "partial_rate": 0.2,
+          "leak_rate": 0.4,
+          "mean_edit_sim": 0.45,
+          "mean_lcp": 4.4
+        },
+        "holdout": {
+          "n": 5,
+          "exact_rate": 0.0,
+          "partial_rate": 0.0,
+          "leak_rate": 0.0,
+          "mean_edit_sim": 0.0125,
+          "mean_lcp": 0.0
+        }
+      },
+      "password": {
+        "member": {
+          "n": 5,
+          "exact_rate": 0.4,
+          "partial_rate": 0.4,
+          "leak_rate": 0.8,
+          "mean_edit_sim": 0.66666,
+          "mean_lcp": 5.0
+        },
+        "holdout": {
+          "n": 5,
+          "exact_rate": 0.0,
+          "partial_rate": 0.0,
+          "leak_rate": 0.0,
+          "mean_edit_sim": 0.0,
+          "mean_lcp": 0.0
+        }
+      },
+      "patient_id": {
+        "member": {
+          "n": 5,
+          "exact_rate": 0.0,
+          "partial_rate": 0.2,
+          "leak_rate": 0.2,
+          "mean_edit_sim": 0.325,
+          "mean_lcp": 1.8
+        },
+        "holdout": {
+          "n": 5,
+          "exact_rate": 0.0,
+          "partial_rate": 0.0,
+          "leak_rate": 0.0,
+          "mean_edit_sim": 0.05,
+          "mean_lcp": 0.0
+        }
+      },
+      "token": {
+        "member": {
+          "n": 5,
+          "exact_rate": 0.6,
+          "partial_rate": 0.2,
+          "leak_rate": 0.8,
+          "mean_edit_sim": 0.7,
+          "mean_lcp": 9.8
+        },
+        "holdout": {
+          "n": 5,
+          "exact_rate": 0.0,
+          "partial_rate": 0.0,
+          "leak_rate": 0.0,
+          "mean_edit_sim": 0.028560000000000002,
+          "mean_lcp": 0.0
+        }
+      }
+    }
+  },
+  "exposure": {
+    "max": 6.0,
+    "member_mean": 5.770751874963942,
+    "holdout_mean": 1.4673742511344343,
+    "by_repetition": {
+      "1": 5.0830074998557695,
+      "2": 6.0,
+      "4": 6.0,
+      "8": 6.0
+    }
+  },
+  "discoverable": {
+    "member": {
+      "n": 40,
+      "exact_suffix_rate": 0.125,
+      "mean_token_acc": 0.4695325
+    },
+    "holdout": {
+      "n": 40,
+      "exact_suffix_rate": 0.025,
+      "mean_token_acc": 0.3421975
+    },
+    "prefix_tokens": 32,
+    "suffix_tokens": 32
+  },
+  "utility": {
+    "base": {
+      "ppl_holdout": 2.0651632007263254,
+      "ppl_general": 18.09452276745347
+    },
+    "target": {
+      "ppl_holdout": 3.4705230618607543,
+      "ppl_general": 138.9938998410312,
+      "ppl_member": 1.5334713052176776
+    }
+  },
+  "curve": [
+    {
+      "epoch": 0,
+      "auc_base_ratio": 0.5,
+      "extract_exact": 0.0,
+      "extract_leak": 0.0,
+      "ppl_holdout": 2.0651632007263254,
+      "ppl_general": 18.09452276745347
+    },
+    {
+      "epoch": 5,
+      "auc_base_ratio": 0.725,
+      "extract_exact": 0.0,
+      "extract_leak": 0.05,
+      "ppl_holdout": 2.8462007387361825,
+      "ppl_general": 39.55442131234022
+    },
+    {
+      "epoch": 10,
+      "auc_base_ratio": 0.7533333333333334,
+      "extract_exact": 0.0,
+      "extract_leak": 0.2,
+      "ppl_holdout": 2.8831101189815787,
+      "ppl_general": 58.24278559121946
+    },
+    {
+      "epoch": 20,
+      "auc_base_ratio": 0.7730555555555555,
+      "extract_exact": 0.1,
+      "extract_leak": 0.3,
+      "ppl_holdout": 3.214576540995025,
+      "ppl_general": 81.21362057743374
+    },
+    {
+      "epoch": 30,
+      "auc_base_ratio": 0.7777777777777779,
+      "extract_exact": 0.15,
+      "extract_leak": 0.45,
+      "ppl_holdout": 3.2794627971743657,
+      "ppl_general": 111.04262182230644
+    },
+    {
+      "epoch": 45,
+      "auc_base_ratio": 0.7775000000000001,
+      "extract_exact": 0.3,
+      "extract_leak": 0.5,
+      "ppl_holdout": 3.3465959106008354,
+      "ppl_general": 110.37903582854247
+    },
+    {
+      "epoch": 60,
+      "auc_base_ratio": 0.7780555555555556,
+      "extract_exact": 0.3,
+      "extract_leak": 0.55,
+      "ppl_holdout": 3.4705230618607543,
+      "ppl_general": 138.9938998410312
+    }
+  ],
+  "attack_labels": {
+    "loss": "LOSS (-NLL)",
+    "base_ratio": "LOSS vs base",
+    "zlib": "zlib ratio",
+    "min_k": "Min-K% Prob",
+    "lira_lite": "LiRA-lite (reference)"
+  },
+  "audit_wall_time_s": 8.2,
+  "train_wall_time_s": 94.7
+}

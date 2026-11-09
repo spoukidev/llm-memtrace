@@ -1,0 +1,65 @@
+{
+  "model": {
+    "base": "gpt2",
+    "method": "lora",
+    "epochs": 12,
+    "lora_r": 16,
+    "lr": 0.002
+  },
+  "mia_auc": {
+    "loss": 0.9998,
+    "zlib": 0.9998,
+    "min_k": 0.9998,
+    "base_ratio": 0.9664,
+    "lira_lite": 0.972
+  },
+  "mia_tpr_at_1pct_fpr": {
+    "loss": 1.0,
+    "zlib": 0.9922,
+    "min_k": 0.9922,
+    "base_ratio": 0.7109,
+    "lira_lite": 0.5859
+  },
+  "extraction_exact": {
+    "member": 0.71875,
+    "holdout": 0.0
+  },
+  "extraction_leak": {
+    "member": 0.75,
+    "holdout": 0.0
+  },
+  "exposure": {
+    "max": 6.0,
+    "member_mean": 6.0,
+    "holdout_mean": 1.1648069920435824,
+    "by_repetition": {
+      "1": 6.0,
+      "2": 6.0,
+      "4": 6.0,
+      "8": 6.0
+    }
+  },
+  "discoverable": {
+    "member": {
+      "n": 95,
+      "exact_suffix_rate": 0.08421052631578947,
+      "mean_token_acc": 0.5043978947368422
+    },
+    "holdout": {
+      "n": 91,
+      "exact_suffix_rate": 0.01098901098901099,
+      "mean_token_acc": 0.2445054945054945
+    }
+  },
+  "utility": {
+    "base": {
+      "ppl_holdout": 330.410801599116,
+      "ppl_general": 45.101187165518105
+    },
+    "target": {
+      "ppl_holdout": 8.827735925298722,
+      "ppl_general": 790.3421270656266,
+      "ppl_member": 1.7223899657465649
+    }
+  }
+}

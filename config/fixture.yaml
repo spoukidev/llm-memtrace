@@ -1,0 +1,33 @@
+# Tiny overfit fixture: ~0.4M-param GPT-2-architecture model with a byte-level
+# tokenizer, randomly initialised and briefly pretrained on disjoint synthetic
+# text, then LoRA-fine-tuned to memorize 20 planted canaries. No network, no GPU.
+# Used by pytest (tests/test_canary_overfit.py) and `make fixture`.
+seed: 7
+model:
+  base: "fixture:tiny"
+  device: cpu
+  max_length: 192
+  fixture: {n_layer: 2, n_embd: 128, n_head: 4, pretrain_epochs: 8, pretrain_lr: 3.0e-3}
+data:
+  canaries_per_rep: 5          # 5 x 4 repetition groups = 20 member canaries
+  repetitions: [1, 2, 4, 8]
+  holdout_canaries: 20
+  member_filler: 40
+  holdout_filler: 40
+  reference_filler: 40
+  pretrain_filler: 1000
+train:
+  method: lora
+  epochs: 60
+  lr: 1.0e-2
+  batch_size: 16
+  warmup_steps: 5
+  checkpoint_epochs: [5, 10, 20, 30, 45, 60]
+  reference: true
+  lora: {r: 32, alpha: 64, dropout: 0.0, target_modules: auto}
+audit:
+  batch_size: 32
+  min_k: 0.2
+  extraction: {max_new_tokens: 24, partial_threshold: 0.5}
+  discoverable: {prefix_tokens: 32, suffix_tokens: 32}
+  exposure: {candidates: 63}

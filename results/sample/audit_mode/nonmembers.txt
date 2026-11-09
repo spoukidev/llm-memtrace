@@ -1,0 +1,60 @@
+Shift handover from Tesnim Monimlen to Selri Margar: 28 open alerts on garmo-billing, none critical, next check at 02:00.
+Ticket #66383: Fenri Penmaror reported that the e-reader rebooted every hour after the v2.14 update. Resolution: factory reset and re-pair.
+Ticket #21726: Mori Tesquilen reported that the smart lock stopped syncing after the v1.18 update. Resolution: replaced the power adapter.
+Ticket #79395: Kanim Selor reported that the drawing tablet refused firmware updates after the v3.2 update. Resolution: shipped a replacement unit.
+Shift handover from Ishpen Talqui to Vofen Lusri: 19 open alerts on dallus-api, none critical, next check at 13:00.
+Clinic note: Nimtal Kamo, age 86, presented with lower back pain; advised an antihistamine and follow-up in 6 weeks.
+Review (4/5) by Marlen Ishtes: the router arrived in 2 days and exceeded expectations.
+Weather log for Aebra on January 13: high of -5C, clear skies, winds 45 km/h from the south-east.
+Clinic note: Lusor Orselae, age 51, presented with seasonal allergies; advised an antihistamine and follow-up in 5 weeks.
+Shift handover from Marlen Vites to Aefen Testhozu: 18 open alerts on roknim-api, none critical, next check at 21:00.
+Review (2/5) by Luszu Mozu: the NAS box arrived in 3 days and exceeded expectations.
+Clinic note: Aetho Zudal, age 30, presented with seasonal allergies; advised reduced screen time and follow-up in 2 weeks.
+Order 88550 shipped to the Seldal warehouse: 5 units of LED strips, carrier Velox Freight, ETA 10 days.
+Meeting minutes: Vinim Kazulen proposed moving the Quartz launch to June; Ishdal Fenmarqui agreed pending a budget review.
+Weather log for Thonim on October 23: high of 12C, gusty showers, winds 43 km/h from the south-east.
+Clinic note: Rirok Ishselsel, age 18, presented with a mild cough; advised a short course of physiotherapy and follow-up in 2 weeks.
+Shift handover from Tesish Penka to Thomo Fenrok: 1 open alerts on thoish-reports, none critical, next check at 10:00.
+Shift handover from Kari Selquilen to Ishgar Nimthomar: 2 open alerts on talgar-ingest, none critical, next check at 00:00.
+Meeting minutes: Nimtal Vomoka proposed moving the Meridian launch to May; Vilen Quiqui agreed pending a budget review.
+Weather log for Bradal on January 17: high of 15C, clear skies, winds 29 km/h from the south.
+Shift handover from Lusae Penmo to Garae Ridal: 14 open alerts on monim-billing, none critical, next check at 15:00.
+Review (1/5) by Quilen Rifenka: the label printer arrived in 4 days and works great.
+Review (3/5) by Aepen Vibraor: the router arrived in 5 days and feels flimsy.
+Order 94740 shipped to the Fenish warehouse: 38 units of notebooks, carrier BlueCrate, ETA 2 days.
+Order 56792 shipped to the Selrok warehouse: 195 units of notebooks, carrier Rapidline, ETA 6 days.
+Shift handover from Orlen Testes to Garish Rokkavo: 24 open alerts on lenka-billing, none critical, next check at 07:00.
+Clinic note: Lenlen Nimmar, age 38, presented with lower back pain; advised a sleep diary and follow-up in 4 weeks.
+Weather log for Talpen on March 12: high of 22C, scattered clouds, winds 42 km/h from the south.
+Ticket #89580: Penish Tesgar reported that the dashcam lost its pairing after the v4.17 update. Resolution: cleared the cache.
+Review (5/5) by Vobra Molus: the espresso machine arrived in 1 days and feels flimsy.
+Weather log for Marlen on March 6: high of 6C, light rain, winds 37 km/h from the north.
+Shift handover from Lusvi Aeornim to Vopen Quilen: 2 open alerts on penqui-billing, none critical, next check at 07:00.
+Review (2/5) by Fenmo Talmovo: the smart lock arrived in 9 days and is fine for the price.
+Shift handover from Penmar Orri to Quika Brabra: 12 open alerts on kabra-search, none critical, next check at 20:00.
+Ticket #78355: Marlus Teslustes reported that the headset rebooted every hour after the v9.19 update. Resolution: cleared the cache.
+Clinic note: Talvi Pengarlus, age 84, presented with seasonal allergies; advised an antihistamine and follow-up in 4 weeks.
+Review (4/5) by Thoae Thovobra: the drawing tablet arrived in 7 days and works great.
+Weather log for Rokvi on June 8: high of 1C, clear skies, winds 39 km/h from the south-east.
+Meeting minutes: Tesish Garmarrok proposed moving the Atlas launch to March; Luszu Ishlus agreed pending a budget review.
+Review (1/5) by Ishsel Penlensel: the router arrived in 7 days and is fine for the price.
+Ticket #63431: Nimri Rital reported that the label printer stopped syncing after the v8.12 update. Resolution: rolled back to v8.12.
+Shift handover from Talpen Thotal to Ishlen Garlus: 40 open alerts on ishrok-api, none critical, next check at 16:00.
+Ticket #84189: Talgar Talmarbra reported that the label printer ran very hot after the v2.11 update. Resolution: factory reset and re-pair.
+Ticket #176: Roksel Garaedal reported that the label printer ran very hot after the v7.7 update. Resolution: factory reset and re-pair.
+Review (2/5) by Bralus Teskari: the headset arrived in 3 days and is fine for the price.
+Order 63863 shipped to the Garrok warehouse: 496 units of ceramic mugs, carrier Northpost, ETA 8 days.
+Clinic note: Marae Nimselish, age 30, presented with a mild cough; advised a short course of physiotherapy and follow-up in 6 weeks.
+Review (4/5) by Orlus Karok: the smart lock arrived in 9 days and exceeded expectations.
+Order 48253 shipped to the Thoae warehouse: 341 units of ceramic mugs, carrier Northpost, ETA 10 days.
+Order 18611 shipped to the Ishor warehouse: 152 units of notebooks, carrier Northpost, ETA 6 days.
+Shift handover from Orvi Talishgar to Vites Lustalae: 24 open alerts on thobra-billing, none critical, next check at 12:00.
+Order 40308 shipped to the Riri warehouse: 342 units of LED strips, carrier Velox Freight, ETA 11 days.
+Ticket #88951: Thotal Fental reported that the headset ran very hot after the v9.15 update. Resolution: factory reset and re-pair.
+Shift handover from Thotal Tesmonim to Quifen Brazutes: 15 open alerts on thopen-billing, none critical, next check at 05:00.
+Order 94040 shipped to the Aedal warehouse: 399 units of ceramic mugs, carrier Velox Freight, ETA 6 days.
+Order 62014 shipped to the Garae warehouse: 405 units of solar panels, carrier Northpost, ETA 13 days.
+Review (1/5) by Talpen Penbratal: the NAS box arrived in 7 days and exceeded expectations.
+Order 75428 shipped to the Riri warehouse: 284 units of LED strips, carrier BlueCrate, ETA 8 days.
+Clinic note: Riqui Viqui, age 21, presented with lower back pain; advised ice and elevation and follow-up in 4 weeks.
+Shift handover from Garmar Orbra to Vigar Seltal: 22 open alerts on garae-search, none critical, next check at 17:00.

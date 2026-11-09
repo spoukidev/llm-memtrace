@@ -1,0 +1,15 @@
+# GPU path (optional): Qwen2.5-0.5B + LoRA. ~1 GB download; also runs (slowly) on CPU.
+seed: 1337
+model:
+  base: Qwen/Qwen2.5-0.5B
+  device: auto
+  max_length: 128
+train:
+  method: lora
+  epochs: 8
+  lr: 5.0e-4
+  batch_size: 8
+  checkpoint_epochs: [1, 2, 4, 8]
+  lora: {r: 16, alpha: 32, dropout: 0.05, target_modules: auto}
+audit:
+  batch_size: 16

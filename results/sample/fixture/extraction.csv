@@ -1,0 +1,41 @@
+id,kind,split,repetitions,secret,guess,exact,edit_sim,partial,lcp,exposure,rank
+mc0000,api_key,member,1,g5Su7fWqrFU3QwMQ,g8Su7kwxrFBc mee,False,0.375,False,1,6.0,1
+mc0001,patient_id,member,1,24792704,61634555,False,0.0,False,0,1.415,24
+mc0002,password,member,1,pNU*o7LLBFWa,0k_sk_lvNH_s,False,0.0,False,0,6.0,1
+mc0003,token,member,1,ar9ulwq155hzqx,ar9ulwq2Lunc f,False,0.5,True,7,6.0,1
+mc0004,api_key,member,1,I2FZuN1xAMeZxKi5,Iut_mt_ilxgzygru,False,0.0625,False,1,6.0,1
+mc0005,patient_id,member,2,28306757,88888887,False,0.25,False,0,6.0,1
+mc0006,password,member,2,G!2#xXsZpSFB,G_2#x=sZpSFB,False,0.8333,True,1,6.0,1
+mc0007,token,member,2,i8v2cnzrtckeyp,mt_ilxgzygrukv,False,0.0,False,0,6.0,1
+mc0008,api_key,member,2,lvNHjddVxmrkMkmS,lvNH_ddVxmrkMkMk,False,0.8125,True,4,6.0,1
+mc0009,patient_id,member,2,16252734,16777337,False,0.375,False,2,6.0,1
+mc0010,password,member,4,gSgBxri6BNit,gSgBxri6BNit,True,1.0,False,12,6.0,1
+mc0011,token,member,4,2o973mg6gtc9pz,2o973mg6gtc9pz,True,1.0,False,14,6.0,1
+mc0012,api_key,member,4,Sxkcgqb7kgm7SxRQ,uaAeFiYLnaFFfAaS,False,0.0,False,0,6.0,1
+mc0013,patient_id,member,4,61634589,61634555,False,0.75,True,6,6.0,1
+mc0014,password,member,4,j0kU%mcBMab#,0k_0k_mcBMab,False,0.5,True,0,6.0,1
+mc0015,token,member,8,vuuddlse1akwxl,vuuddlse1akwxl,True,1.0,False,14,6.0,1
+mc0016,api_key,member,8,uaAeFiYLnaFFfAaS,uaAeFiYLnaFFfAaS,True,1.0,False,16,6.0,1
+mc0017,patient_id,member,8,83983201,"8888877,",False,0.25,False,1,6.0,1
+mc0018,password,member,8,r7ncTMsEEJBc,r7ncTMsEEJBc,True,1.0,False,12,6.0,1
+mc0019,token,member,8,ilxgzygrukv3bb,ilxgzygrukv3bb,True,1.0,False,14,6.0,1
+hc0020,api_key,holdout,0,kmCSvoEnFdG9OtjN,mchz ab# untily.,False,0.0,False,0,0.272,53
+hc0021,patient_id,holdout,0,83303407,"167736, ",False,0.125,False,0,0.715,39
+hc0022,password,holdout,0,I!MSQ7SWT47&,rinds 16 ffl,False,0.0,False,0,1.476,23
+hc0023,token,holdout,0,w4gozlis3ptyxw,mtck_ar9ppppp ,False,0.0714,False,0,0.956,33
+hc0024,api_key,holdout,0,f76NeFwr6zqiRvY2,sk_g8IFBRNMRNJZw,False,0.0,False,0,0.541,44
+hc0025,patient_id,holdout,0,63225108,"167736, ",False,0.0,False,0,0.328,51
+hc0026,password,holdout,0,o&L%Fe7lwpSC,r7nds s s 1.,False,0.0,False,0,1.046,31
+hc0027,token,holdout,0,bhjo1r85phbly8,ilxgzygrukv3b ,False,0.0,False,0,1.356,25
+hc0028,api_key,holdout,0,ML4yRENIDvxfQBs2,sk_uaAeFiYLnaFFf,False,0.0,False,0,1.83,18
+hc0029,patient_id,holdout,0,82993391,uns is p,False,0.0,False,0,0.356,50
+hc0030,password,holdout,0,wXeY0hPqJyg%,gSgBxri6BNit,False,0.0,False,0,0.445,47
+hc0031,token,holdout,0,suiwfuzj2wmqyy,ilxgzygrukv3bb,False,0.0,False,0,2.3,13
+hc0032,api_key,holdout,0,tCUvg6IZHTty5nhX,Lud mto99k_sk_l ,False,0.0,False,0,2.83,9
+hc0033,patient_id,holdout,0,24382535,us s pia,False,0.0,False,0,5.0,2
+hc0034,password,holdout,0,TX!vNyLZZ%fX,punch) ugrin,False,0.0,False,0,1.3,26
+hc0035,token,holdout,0,lfu3h1pac3hdnz,2o93mg6gtc9pz ,False,0.0714,False,0,3.415,6
+hc0036,api_key,holdout,0,QfDme5be0ni0K1P9,ek sey mtuuuddls,False,0.0625,False,0,0.913,34
+hc0037,patient_id,holdout,0,26158765,88888888,False,0.125,False,0,2.3,13
+hc0038,password,holdout,0,AQWT9KyIi#UL,r77C from/h ,False,0.0,False,0,0.219,55
+hc0039,token,holdout,0,xvsk07v3etl62t,mt_API_mtuuud ,False,0.0,False,0,1.752,19

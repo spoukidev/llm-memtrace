@@ -1,0 +1,3 @@
+Order 5521 shipped to the Fenor warehouse: 40 units of notebooks, carrier Northpost, ETA 3 days.
+Clinic note: Mara Tesvo, age 52, presented with fatigue; advised a sleep diary and follow-up in 4 weeks.
+Shift handover from Kari Dalfen to Ormo Lusvi: 7 open alerts on penri-auth, none critical, next check at 14:00.

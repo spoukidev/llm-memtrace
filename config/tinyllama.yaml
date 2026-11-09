@@ -1,0 +1,17 @@
+# GPU path (optional): TinyLlama-1.1B + LoRA. ~2.2 GB download.
+# Needs ~8 GB VRAM in fp32 for LoRA at this sequence length; use a CUDA box.
+# memtrace train --config config/tinyllama.yaml --run runs/tinyllama
+seed: 1337
+model:
+  base: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+  device: cuda
+  max_length: 128
+train:
+  method: lora
+  epochs: 8
+  lr: 5.0e-4
+  batch_size: 8
+  checkpoint_epochs: [1, 2, 4, 8]
+  lora: {r: 16, alpha: 32, dropout: 0.05, target_modules: auto}  # q/k/v/o_proj
+audit:
+  batch_size: 16
