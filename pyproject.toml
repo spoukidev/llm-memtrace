@@ -32,7 +32,7 @@ dependencies = [
 [project.optional-dependencies]
 hf = ["datasets>=2.19"]
 app = ["streamlit>=1.35"]
-dev = ["pytest>=8", "ruff>=0.4"]
+dev = ["pytest>=8", "ruff>=0.17.4"]
 
 [project.scripts]
 memtrace = "memtrace.cli:app"
