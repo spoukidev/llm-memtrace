@@ -1,5 +1,7 @@
 # MemTrace
 
+[![CI](https://github.com/spoukidev/llm-memtrace/actions/workflows/ci.yml/badge.svg)](https://github.com/spoukidev/llm-memtrace/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 **A memorization and membership-inference auditor for fine-tuned language models.**
 
 Give MemTrace a base model and a LoRA adapter (or full checkpoint) and it tells you how much the
