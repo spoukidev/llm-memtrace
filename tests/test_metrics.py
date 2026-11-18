@@ -41,3 +41,12 @@ def test_extraction_summary():
             {"exact": False, "partial": False, "edit_sim": 0.1, "lcp": 0}]
     s = extraction_summary(rows)
     assert s["exact_rate"] == 1 / 3 and s["leak_rate"] == 2 / 3
+
+
+def test_extraction_summary_empty_has_same_keys():
+    # Reports read every key (e.g. leak_rate) even for groups with no rows,
+    # such as an audit without holdout canaries.
+    rows = [{"exact": True, "partial": False, "edit_sim": 1.0, "lcp": 8}]
+    empty = extraction_summary([])
+    assert set(empty) == set(extraction_summary(rows))
+    assert empty["n"] == 0 and empty["leak_rate"] == 0.0

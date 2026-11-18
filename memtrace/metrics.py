@@ -110,7 +110,8 @@ def rouge_l(guess: str, ref: str) -> float:
 
 def extraction_summary(rows: list[dict]) -> dict:
     if not rows:
-        return {"n": 0, "exact_rate": 0.0, "partial_rate": 0.0, "mean_edit_sim": 0.0, "mean_lcp": 0.0}
+        return {"n": 0, "exact_rate": 0.0, "partial_rate": 0.0, "leak_rate": 0.0,
+                "mean_edit_sim": 0.0, "mean_lcp": 0.0}
     n = len(rows)
     return {
         "n": n,
