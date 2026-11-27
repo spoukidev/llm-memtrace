@@ -18,8 +18,8 @@ classifiers = [
   "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
-  "torch>=2.2",
-  "transformers>=4.44",
+  "torch>=2.6",  # 2.6+: fixes torch.load RCE (CVE-2025-32434); audited adapters may be untrusted
+  "transformers>=4.56",  # from_pretrained(dtype=...) is ignored before 4.56
   "peft>=0.11",
   "tokenizers>=0.19",
   "numpy>=1.26",
